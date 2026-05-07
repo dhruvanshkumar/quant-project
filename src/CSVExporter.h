@@ -11,5 +11,5 @@ public:
     void exportSummary(const BacktestResult& result, const PerformanceMetrics& metrics) const;
 private:
     string m_outputDir;
-    static string safeFilename(const string);
+    static string safeFilename(const string& name);
 };

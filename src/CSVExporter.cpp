@@ -35,7 +35,7 @@ void CSVExporter::exportTradeLog(const BacktestResult& result) const {
     }
     std::cout << "[Export] Trade log ->" << path << "\n";
 }
-void csvExporter::exportSummary(const BacktestResult& result, const PerformanceMetrics& metrics) const {
+void CSVExporter::exportSummary(const BacktestResult& result, const PerformanceMetrics& metrics) const {
     std::string path = m_outputDir + "/summary.csv";
     bool needsHeader = false;
     {
