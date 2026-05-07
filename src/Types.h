@@ -2,6 +2,7 @@
 #include<string>
 #include<vector>
 using namespace std;
+
 struct OHLCV {
     string date;
     double open = 0.0;
@@ -10,15 +11,18 @@ struct OHLCV {
     double close = 0.0;
     double volume = 0.0;
 };
-enum class Signal (BUY, SELL, HOLD);
-struct Trade{
+
+enum class Signal { BUY, SELL, HOLD };  // <-- curly braces, not parentheses
+
+struct Trade {
     string date;
     Signal action = Signal::HOLD;
     double price = 0.0;
     int shares = 0;
     double pnl = 0.0;
 };
-struct EquityPoint{
+
+struct EquityPoint {
     string date;
     double equity = 0.0;
 };

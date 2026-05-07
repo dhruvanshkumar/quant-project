@@ -17,4 +17,4 @@ public:
     BacktestResult run(Strategy& strategy, const std::vector<OHLCV>& data);
 private:
     double m_initialCash;
-}
+};

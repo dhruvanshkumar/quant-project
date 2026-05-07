@@ -9,7 +9,7 @@
 #include"Metrics.h"
 #include"CSVExporter.h"
 using namespace std;
-static void printMetrics(const string& name, const PerformaceMetrics& m){
+static void printMetrics(const string& name, const PerformanceMetrics& m){
     cout << "\n===================================\n";
     cout << " Strategy : " << name << "\n";
     cout << "=======================================\n";
